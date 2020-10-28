@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>获取页面元素</title>
+	</head>
+	<body>
+		用户名：<input type="text" name="username" id="username"  value="" size=""/><br />
+		密码：<input type="password" name="pwd" id="pwd" /><br />
+		<button onclick="getValue()">按钮</button>
+	</body>
+	<script type="text/javascript">
+		//点击按钮后，将用户名打印再控制台上
+		/*
+		 * DOM：文档对象模型：
+		 * 	将文档看成对象:
+		 * 	html文件：document
+		 * 	页面上的标签：元素，element，
+		 * 
+		 * 数据类型：number，string，boolean，object。。。
+		 */
+		function getValue(){
+			//step1：根据标签的id来获取标签对象：元素
+			var obj1 = document.getElementById('username');
+//			alert(obj1);
+			console.log(obj1);
+			//step2：根据元素获取里面的value值
+			var username = obj1.value;
+			console.log(username)
+			alert(username)
+			
+			//根据id获取元素，根据元素获取属性值
+			var obj2 = document.getElementById('pwd');
+			var pwd = obj2.value;
+			console.log(pwd);
+		}
+	</script>
+</html>

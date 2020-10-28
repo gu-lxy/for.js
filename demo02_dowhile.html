@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>dowhile循环</title>
+	</head>
+	<body>
+	</body>
+	<script type="text/javascript">
+		/*
+		 * do{
+			  循环体；
+			}while（循环条件）；
+			
+			先执行循环体，再判断条件是否成立。
+			哪怕循环条件不成立，至少执行1次。
+		 */
+		//打印5次helloworld
+		var i = 1;
+		do{
+			console.log('helloworld'); // i:1,2,3,4,5
+			i++;//2
+		}while(i <= 0);
+		console.log(i)
+		/*
+		 * 练习1：使用do-while循环，打印1-100内的奇数
+		 * 练习2：使用do-while循环，求1-10的和。
+		 */
+		i = 1;
+		do{
+			console.log(i);
+			i+=2;
+		}while(i<=100)
+		
+		var sum = 0;
+		i = 1;
+		do{
+			sum += i;//+1 + 2 + 3  + 4.。+10
+			i++; // 2, 3 , 4 ，5 ， 11
+		}while(i <= 10);
+		console.log(sum)
+	</script>
+</html>

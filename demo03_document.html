@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>document</title>
+		<style type="text/css">
+			#box{
+				width: 100px;
+				height: 100px;
+				background: pink;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box">
+		</div>
+		<button onclick="test1()">按钮</button>
+	</body>
+	<script type="text/javascript">
+		/*
+		 * 打印输出
+		 */
+		console.log('hello')
+		/*
+		 * document,词义：文档
+		 * js：
+		 * 	ECMAScript：核心语法
+		 * 	DOM：文档对象模型，就将整个文档看成一个对象：document
+		 * 	BOM：
+		 * 
+		 * 方法：js提供好的功能，向文档输出内容
+		 */
+		document.write('你好，王二狗') //向文档上写出内容
+		
+		
+		//函数：function，就是一段代码，
+		/*
+		 * 按钮：添加了一个点击事件：onclick
+		 * 事件驱动函数的执行：
+		 * 	当事件发生的之后，执行对用的函数。
+		 */
+		function test1(){
+//			alert('点我')//弹框
+			document.write('helloworld')//向页面写内容，当页面加载完毕后，再写出内容，会覆盖整个页面
+		}
+	</script>
+</html>
